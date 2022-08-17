@@ -1,0 +1,143 @@
+.app__navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #15133C, #000000 100%);
+    padding: 1rem 2rem;
+    z-index: 999;
+}
+
+.navbar.active {
+    background: linear-gradient(90deg, rgb(237, 212, 26) 0%, rgb( 0, 79, 194) 100%);
+}
+
+.app__navbar__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.app__navbar__logo img {
+    width: 60px;
+}
+
+.app__navbar__links {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.app__navbar__links li {
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.app__navbar__links:hover {
+    color: var(--color-black);
+}
+
+.text__navbar {
+    font-family: var(--font-base);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04rem;
+    text-transform: capitalize;
+    line-height: 28px;
+    font-size: 16px;
+}
+
+/* Mobile__Navbar */
+
+.app__navbar__smallscreen {
+    display: none;
+}
+
+.app__navbar__smallscreen__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-black);
+    transition: 0.5 ease;
+    flex-direction: column;
+    z-index: 5;   
+}
+
+.app__navbar__smallscreen__overlay .overlay__close {
+    font-size: 27px;
+    color: var(--color-black);
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.app__navbar__smallscreen__links {
+    color: var(--color-white);
+    list-style: none;
+}
+
+.app__navbar__links li:hover {
+    color: var(--color-golden);
+    border-bottom: 2px solid var(--color-gold);
+}
+
+.app__text__mobile {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 2rem;
+    align-content: center;
+}
+
+/* Breakpoints */
+
+@media screen and (min-width: 2000px) {
+    .app__navbar__logo img {
+        width: 210px;
+    }
+
+    .text__navbar {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+}
+
+@media screen and (max-width: 1150px) {
+    .app__navbar__links {
+        display: none;
+    }
+
+    .app__navbar__smallscreen {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__navbar {
+        padding: 1rem;
+    }
+
+    .app__navbar__logo img {
+        width: 90px;
+    }
+
+    .text__navbar {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .text__navbar {
+        font-size: 12px;
+    }
+    .app__navbar {
+        background: var(--color-darkblue);
+    }
+}
+

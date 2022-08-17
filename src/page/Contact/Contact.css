@@ -1,0 +1,77 @@
+.app__contact {
+    background: var(--main-color);
+    padding: 2rem 4rem;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.app__contact__title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    line-height: 10.5px;
+}
+
+.app__contact__container {
+    grid-template-columns: repeat(2, max-content);
+    column-gap: 6rem;
+    padding-bottom: 3rem;
+    justify-content: center;
+}
+
+.app__contact__info {
+    display: grid;
+    row-gap: 1rem;
+    grid-template-columns: 300px;
+}
+
+.app__contact__card {
+    border: 1px solid rgba(0,0,0,0.1);
+    background-color: var(--color-white);
+    padding: 1rem;
+    border-radius: 0.75rem;
+    text-align: center;
+}
+
+
+.contact__card__icons {
+    font-size: 2rem;
+    color: var(--color-golden);
+    margin-bottom: 0.25rem;
+}
+/* .app__contact__form {
+    width: 360px;
+} */
+
+
+
+/* Breakpoints */
+
+@media screen and (min-width: 2000px) {
+
+}
+
+@media screen and (max-width: 1150px) {
+
+}
+
+@media screen and (max-width: 850px) {
+
+}
+
+@media screen and (max-width: 650px) {
+
+}
+
+@media screen and (max-width: 450px) {
+    .app__contact__title {
+        margin-top: 10px;
+        font-size: 25px;
+    }
+}
+
+
+
+

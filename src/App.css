@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+.section__pading {
+  padding: 3rem 1rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.relative {
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flex__center {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.mb__2 {
+  margin-bottom: 4rem;
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.app__outline__image {
+  display: flex;
+  opacity: 40;
+  margin-left: 35rem;
+  top: 0px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container {
+  max-width: 968px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.grid {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Breakpoints */
+
+@media screen and (min-width: 2000px) {
+  
+}
+
+@media screen and (max-width: 1150px) {
+  
+}
+
+@media screen and (max-width: 850px) {
+  .section__pading {
+    padding: 2rem;
   }
-  to {
-    transform: rotate(360deg);
+
+ 
+}
+
+@media screen and (max-width: 650px) {
+  .section__pading {
+    padding: 1rem 1rem;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+  .app__outline__image {
+    height: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0.2rem;
+    margin-left: 0;
+    right: 10px;
   }
 }
