@@ -20,7 +20,7 @@
 .app__outline__image {
   display: flex;
   opacity: 40;
-  margin-left: 35rem;
+  margin-left: 26rem;
   top: 0px;
   position: relative;
   text-align: center;
@@ -73,5 +73,9 @@
     margin-bottom: 0.2rem;
     margin-left: 0;
     right: 10px;
+  }
+
+  .mb__2 {
+    margin-bottom: 1rem;
   }
 }

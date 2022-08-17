@@ -3,6 +3,7 @@ import './App.css';
 // Navbar //
 import Navbar from './components/Navbar/Navbar';
 import Contact from './page/Contact/Contact';
+import Testimonials from './page/Testimonials/Testimonials';
 // import Services from './page/Services/Services';
 
 
@@ -12,6 +13,7 @@ function App() {
       <Navbar />
       {/* <Services /> */}
       <Contact />
+      <Testimonials />
     </>
   );
 }

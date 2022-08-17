@@ -7,7 +7,8 @@
   --color-darkblue: #15133C;
 
   --font-base: 'Playfair Display, serif';
-  --font-alt : 'Roboto', sans-serif;  
+  --font-alt : 'Roboto', sans-serif;
+  --font-sick: 'Righteous', cursive;  
 }
 
 * {

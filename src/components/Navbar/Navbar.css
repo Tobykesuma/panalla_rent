@@ -3,9 +3,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: linear-gradient(90deg, #15133C, #000000 100%);
+    background: var(--color-white);
     padding: 1rem 2rem;
     z-index: 999;
+    position: fixed;
+    box-shadow: 10px solid var(--color-black);
+    
 }
 
 .navbar.active {
@@ -14,20 +17,24 @@
 
 .app__navbar__logo {
     display: flex;
-    justify-content: flex-start;
+    justify-self: start;
     align-items: center;
+    cursor: pointer;
+    margin-left: 20px;
 }
 
 .app__navbar__logo img {
-    width: 60px;
+    width: 100px;
 }
 
 .app__navbar__links {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    justify-content: end;
+    text-align: center;
+    width: 70vw;
     list-style: none;
+    margin-right: 2rem;
 }
 
 .app__navbar__links li {
@@ -40,13 +47,13 @@
 }
 
 .text__navbar {
-    font-family: var(--font-base);
-    color: var(--color-white);
+    font-family: var(--font-sick);
+    color: var(--color-black);
     font-weight: 400;
     letter-spacing: 0.04rem;
     text-transform: capitalize;
     line-height: 28px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Mobile__Navbar */
@@ -56,7 +63,7 @@
 }
 
 .app__navbar__smallscreen__overlay {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -72,8 +79,8 @@
     color: var(--color-black);
     cursor: pointer;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 50px;
+    right: 15px;
 }
 
 .app__navbar__smallscreen__links {
@@ -115,6 +122,14 @@
 
     .app__navbar__smallscreen {
         display: flex;
+    }
+
+    .app__navbar__smallscreen__links {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 250px;
     }
 }
 
